@@ -12,11 +12,11 @@ gem "coffee-rails"
 gem "execjs"
 gem "foreman"
 gem "jquery-fileupload-rails"
-gem "jquery-rails"
+gem "jquery-rails", ">= 4.4.0"
 gem "minitest"
 gem "powder" # Pow related gem
 gem "pry-rails" # not in dev group in case running via prod/staging @ a training
-gem "puma"
+gem "puma", ">= 5.6.9"
 gem "rails-perftest"
 gem "rake"
 gem "responders" #For Rails 4.2 # LOCKED DOWN
