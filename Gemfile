@@ -2,24 +2,24 @@
 source "https://rubygems.org"
 
 #don't upgrade
-gem "rails", "5.1.6"
+gem "rails", "7.1.0"
 
 ruby "2.5.1"
 
 gem "aruba"
 gem "bcrypt"
-gem "coffee-rails"
+gem "coffee-rails", ">= 5.0.0"
 gem "execjs"
 gem "foreman"
-gem "jquery-fileupload-rails"
-gem "jquery-rails"
+gem "jquery-fileupload-rails", ">= 1.0.0"
+gem "jquery-rails", ">= 4.3.4"
 gem "minitest"
 gem "powder" # Pow related gem
 gem "pry-rails" # not in dev group in case running via prod/staging @ a training
 gem "puma"
 gem "rails-perftest"
 gem "rake"
-gem "responders" #For Rails 4.2 # LOCKED DOWN
+gem "responders" , ">= 3.0.0" #For Rails 4.2 # LOCKED DOWN
 gem "ruby-prof"
 gem "sass-rails"
 gem "simplecov", require: false, group: :test
@@ -34,7 +34,7 @@ gem "unicorn"
 # gem 'mailcatcher'
 
 group :development, :mysql do
-  gem "better_errors"
+  gem "better_errors", ">= 2.5.0"
   gem "binding_of_caller"
   gem "brakeman"
   gem "bundler-audit"
@@ -43,18 +43,18 @@ group :development, :mysql do
   gem "guard-rspec"
   gem "guard-shell"
   gem "pry"
-  gem "rack-livereload"
+  gem "rack-livereload", ">= 0.5.1"
   gem "rb-fsevent"
   gem "rubocop-github"
   gem "travis-lint"
 end
 
 group :development, :test, :mysql do
-  gem "capybara"
+  gem "capybara", ">= 3.5.0"
   gem "database_cleaner"
   gem "launchy"
   gem "poltergeist"
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 3.8.0"
   gem "test-unit"
 end
 
