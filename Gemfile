@@ -2,26 +2,26 @@
 source "https://rubygems.org"
 
 #don't upgrade
-gem "rails", "5.1.6"
+gem "rails", "5.1.6.1"
 
 ruby "2.5.1"
 
-gem "aruba"
+gem "aruba", ">= 0.14.13"
 gem "bcrypt"
-gem "coffee-rails"
+gem "coffee-rails", ">= 5.0.0"
 gem "execjs"
-gem "foreman"
-gem "jquery-fileupload-rails"
-gem "jquery-rails"
+gem "foreman", ">= 0.86.0"
+gem "jquery-fileupload-rails", ">= 1.0.0"
+gem "jquery-rails", ">= 4.3.4"
 gem "minitest"
 gem "powder" # Pow related gem
 gem "pry-rails" # not in dev group in case running via prod/staging @ a training
 gem "puma"
 gem "rails-perftest"
 gem "rake"
-gem "responders" #For Rails 4.2 # LOCKED DOWN
+gem "responders" , ">= 2.4.1" #For Rails 4.2 # LOCKED DOWN
 gem "ruby-prof"
-gem "sass-rails"
+gem "sass-rails", ">= 5.0.8"
 gem "simplecov", require: false, group: :test
 gem "sqlite3"
 gem "therubyracer"
@@ -37,11 +37,11 @@ group :development, :mysql do
   gem "better_errors"
   gem "binding_of_caller"
   gem "brakeman"
-  gem "bundler-audit"
-  gem "guard-brakeman"
+  gem "bundler-audit", ">= 0.7.0"
+  gem "guard-brakeman", ">= 0.8.4"
   gem "guard-livereload"
   gem "guard-rspec"
-  gem "guard-shell"
+  gem "guard-shell", ">= 0.7.2"
   gem "pry"
   gem "rack-livereload"
   gem "rb-fsevent"
@@ -54,7 +54,7 @@ group :development, :test, :mysql do
   gem "database_cleaner"
   gem "launchy"
   gem "poltergeist"
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 3.8.0"
   gem "test-unit"
 end
 
